@@ -1,0 +1,15 @@
+URL:    https://github.com
+Status: 200
+Score:  69/100   Grade: C
+Note:   Server header discloses 'github.com' (info leak, minor)
+------------------------------------------------------------------------
+[PASS] Strict-Transport-Security        15/15  strong (max-age=31536000, includeSubDomains)
+[WEAK] Content-Security-Policy          12/20  present; allows 'unsafe-inline'
+[PASS] X-Content-Type-Options           10/10  nosniff set
+[PASS] Frame protection                 15/15  CSP frame-ancestors present (modern clickjacking protection)
+[PASS] Referrer-Policy                  10/10  set (origin-when-cross-origin, strict-origin-when-cross-origin)
+[MISS] Permissions-Policy                0/10  missing — powerful browser features are not explicitly restricted
+[MISS] Cross-Origin-Opener-Policy        0/10  missing — consider Cross-Origin-Opener-Policy: same-origin
+[WEAK] Set-Cookie flags                  7/10  a cookie lacks HttpOnly
+------------------------------------------------------------------------
+Grades: A >= 90, B >= 75, C >= 60, D >= 40, F < 40. A passive header check — it says nothing about the site's code, accounts or vulnerabilities.
